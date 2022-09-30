@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Main-color:#faebd7;
+    --Purple-Color:#8a2be2;
+    --Accent-color:#a52a2a;
+    --transition--color:#170629;
+}
+img{
+    max-width: 100%;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#8a2be2,#a52a2a) ;
+    text-align: center;
+}
+input{
+    border: none;
+    font-size: 2rem;
+    color:var(--Purple-Color);
+    text-align: center;
+    font-family: 'Noto Sans Mono', monospace;
+  
+}
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: rgba(255, 255, 255, .45); 
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type=text]:focus {
+    background-color: transparent;
+}
+
+/* Globales */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 10px rgb(45, 32, 50);        /*Box shadow para glasformismo*/
+    background-color: rgba(255, 255, 255, .45); /*Color para glasformismo*/
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);                     /*Filtro para glasformismo*/
+    border-radius: 5px;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn{
+    border: none;
+    background-color: var(--Purple-Color);
+    color: white;
+    transition: background-color .3s ease-in;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 1.8rem;
+    margin: 10px;
+    font-size:large ;
+}
+.btn:hover{
+    background-color:var(--transition--color);
+}
+#cC, #rC{
+    text-align: center;
+
+}
+#rC{
+ color:var(--Purple-Color) ;
+ font-weight: 900;
+ font-family: 'Noto Sans Mono', monospace;
+}
